@@ -707,7 +707,7 @@ class ReferenceField(BaseField):
             content = StringField()
             foo = ReferenceField('Foo')
 
-        Bar.register_delete_rule(Foo, 'bar', NULLIFY)
+        Bar.register_delete_rule(Foo, 'foo', NULLIFY)
 
     .. note ::
         `reverse_delete_rules` do not trigger pre / post delete signals to be
